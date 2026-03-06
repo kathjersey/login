@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* page background */
+body{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background: linear-gradient(135deg,#d6dde3,#e9eff4);
+}
+
+/* login card */
+.card{
+width:360px;
+padding:40px 32px;
+border-radius:22px;
+background: rgba(255,255,255,0.65);
+backdrop-filter: blur(18px);
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+text-align:center;
+}
+
+/* heading */
+.card h1{
+font-size:26px;
+font-weight:600;
+color:#2f3a40;
+margin-bottom:6px;
+text-transform: lowercase;
+}
+
+.subtitle{
+font-size:14px;
+color:#6b7a86;
+margin-bottom:28px;
+}
+
+/* labels */
+.label{
+text-align:left;
+font-size:12px;
+color:#4a5a67;
+margin-bottom:6px;
+display:block;
+}
+
+/* inputs */
+.input{
+width:100%;
+padding:12px 18px;
+border-radius:60px;
+border:1px solid #e4e9ee;
+background:#f7fafc;
+outline:none;
+font-size:14px;
+margin-bottom:18px;
+}
+
+/* options row */
+.options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:13px;
+margin-bottom:22px;
+color:#5c6b76;
+}
+
+.options label{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.options a{
+text-decoration:none;
+color:#3b8fc1;
+}
+
+/* login button */
+.login-btn{
+width:100%;
+padding:13px;
+border:none;
+border-radius:60px;
+background:#0e334f;
+color:white;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+margin-bottom:20px;
+}
+
+.login-btn:hover{
+opacity:0.9;
+}
+
+/* signup */
+.signup{
+font-size:13px;
+color:#6c7a86;
+margin-bottom:18px;
+}
+
+.signup a{
+text-decoration:none;
+color:#0e334f;
+font-weight:600;
+}
+
+/* responsive indicator */
+.responsive{
+font-size:12px;
+color:#8896a3;
+}
+
+/* responsive */
+@media (max-width:480px){
+
+.card{
+width:90%;
+padding:32px 22px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>welcome back</h1>
+<p class="subtitle">sign in to your account</p>
+
+<label class="label">email or username</label>
+<input class="input" type="text" placeholder="e.g. jordan@example.com">
+
+<label class="label">password</label>
+<input class="input" type="password" placeholder="··········">
+
+<div class="options">
+
+<label>
+<input type="checkbox"> keep me logged in
+</label>
+
+<a href="#">forgot password?</a>
+
+</div>
+
+<button class="login-btn">log in</button>
+
+<div class="signup">
+don't have an account? <a href="#">join now</a>
+</div>
+
+<div class="responsive">
+⚡ responsive — shrink / expand me
+</div>
+
+</div>
+
+</body>
+</html>
